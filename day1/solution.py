@@ -13,12 +13,9 @@ for rotation in rotations:
 
     if dir == 'L':
         dial = (dial - int(val)) % 100
-        # if dial < 0:
-        #     dial = 100 + dial
+
     elif dir == 'R':
         dial = (dial + int(val)) % 100
-        # if dial >= 100:
-        #     dial = dial - 100
 
     if dial == 0:
         zero_count += 1
